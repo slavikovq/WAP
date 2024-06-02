@@ -1,0 +1,87 @@
+:root{
+    --red: #e81c22;
+}
+
+.nav{
+    background-color: #272626;
+    display: flex;
+    padding: 10px 1.5%;
+    align-items: center;
+}
+
+.navLogo{
+    max-width: 280px;
+    width: 100%;
+}
+
+.navLinks{
+   color: white; 
+   list-style: none;
+   display: flex;
+   gap: 40px;
+   margin: auto;
+   font-size: 1.2rem;
+}
+
+.navLinks a{
+   text-decoration: none;
+   color: white;
+}
+
+.navLinks a li{
+    cursor: pointer;
+    position: relative;
+}
+
+.navLinks a li::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: var(--red);
+    transition: .2s ease;
+}
+.navLinks a li:hover::before{
+    width: 75%;
+    transition: .2s ease;
+}
+
+.navSocials{
+    gap: 10px;
+    display: flex;
+}
+
+.navSocials i{
+    color: white;
+    font-size: 25px;   
+    transition: .1s ease; 
+}
+
+.navSocials i:hover{
+    color: var(--red);
+    transition: .1s ease;
+}
+
+.navSocials a {
+    text-decoration: none;
+}
+.navBox1{
+    width: 33.33%;
+    display: flex;
+    justify-content: left;
+}
+.navBox2{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+.navBox3{
+    width: 33.33%;
+    display: flex;
+    justify-content: right;
+}
+
