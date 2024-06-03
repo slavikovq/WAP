@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo img{
+    max-width: 280px;
+    width: 100%;
+}
+
+.contact{    
+    color: white;
+    line-height: 60px;
+    word-spacing: 20px;
+}
+
+.contact p{    
+
+}
+
+.contact h3{    
+    text-transform: uppercase;
+}

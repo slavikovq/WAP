@@ -11,10 +11,10 @@ export default function Navbar(){
                 </div>
                 <div className={styles.navBox2}>
                     <ul className={styles.navLinks}>
-                        <Link to={""}><li>Domů</li></Link>
+                        <Link to={"/"}><li>Domů</li></Link>
                         <Link to={""}><li>O nás</li></Link>
                         <Link to={""}><li>Menu</li></Link>
-                        <Link to={""}><li>Galerie</li></Link>
+                        <Link to={"/Galerie"}><li>Galerie</li></Link>
                         <Link to={""}><li>Kontakt</li></Link>
                     </ul>
                 </div>

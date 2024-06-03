@@ -8,21 +8,16 @@ export default function AboutUs() {
         <div className={styles.aboutUsBox}>
           <div className={styles.aboutUsTime}>
             <h1>Otevírací doba</h1>
-            <p>Pondělí:11:00 až 22:00</p>
+            <p>Pondělí: 11:00 až 22:00</p>
             <p>Úterý: 11:00 až 22:00</p>
             <p>Středa: 11:00 až 22:00</p>
             <p>Čtvrtek: 11:00 až 22:00</p>
             <p>Pátek: 11:00 až 22:00</p>
             <p>Sobota: 11:30 až 22:00</p>
-            <p>Neděle: zavřeno</p>
+            <p>Neděle: ZAVŘENO</p>
           </div>
           <div className={styles.aboutUsMap}>
-            <iframe
-              src="https://en.frame.mapy.cz/s/fupukaraze"
-              width="800"
-              height="500"
-              frameborder="0"
-            ></iframe>
+            <iframe src="https://en.frame.mapy.cz/s/fupukaraze" width="800" height="500" frameborder="0"></iframe>
             <p>Adresa: Komenského náměstí 61 29301 Mladá Boleslav</p>
           </div>
         </div>
@@ -50,8 +45,9 @@ export default function AboutUs() {
           <p>
             Těšíme se na Vaši návštěvu a doufáme, že se Vám trefíme do chutí.
           </p>
-          <p>Děkujeme – Vaše America „Pod Věží „</p>
+          <p>Děkujeme – Vaše America „Pod Věží"</p>
         </div>
+        <div className={styles.AboutUsLine}></div>
       </div>
     </>
   );
