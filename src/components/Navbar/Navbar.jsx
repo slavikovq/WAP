@@ -1,8 +1,11 @@
 import logo from "../../img/logo.png"
 import styles from "./Navbar.module.css" 
 import { Link } from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
+
 
 export default function Navbar(){
+    
     return(
         <>
             <nav className={styles.nav}>
@@ -12,10 +15,10 @@ export default function Navbar(){
                 <div className={styles.navBox2}>
                     <ul className={styles.navLinks}>
                         <Link to={"/"}><li>Domů</li></Link>
-                        <Link to={""}><li>O nás</li></Link>
-                        <Link to={""}><li>Menu</li></Link>
+                        <HashLink to='/#AboutUs'><li>O nás</li></HashLink>
+                        <HashLink to='/#Menu'><li>Menu</li></HashLink>
                         <Link to={"/Galerie"}><li>Galerie</li></Link>
-                        <Link to={""}><li>Kontakt</li></Link>
+                        <HashLink to='/#Kontakt'><li>Kontakt</li></HashLink>
                     </ul>
                 </div>
                 <div className={styles.navBox3}>

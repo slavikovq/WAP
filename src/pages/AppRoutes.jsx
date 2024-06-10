@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Home from "./Home/Home"
-import Galerie from "./Home/Galerie"
+import GaleriePage from "./Galerie/Galerie"
+import Food from "./Food/Food"
+import Drinks from "./Drinks/Drinks"
 
 export default function AppRoutes() {
     return(
@@ -8,52 +10,11 @@ export default function AppRoutes() {
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/Galerie" element={<Galerie/>}/>
+                    <Route path="/Galerie" element={<GaleriePage/>}/>
+                    <Route path="/Food" element={<Food/>}/>
+                    <Route path="/Drinks" element={<Drinks/>}/>
                 </Routes>
             </BrowserRouter>
         </>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Mnau a uz ho nemaz )

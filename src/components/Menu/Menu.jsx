@@ -1,44 +1,35 @@
 import styles from "./Menu.module.css" 
+import burgers from "./imgMenu/burgers.jpg"
+import nevimcotojelol from "./imgMenu/nevimcotojelol.jpg"
+import drinks from "./imgMenu/drinks.jpg"
 import { Link } from "react-router-dom"
-import MenuCard from "./MenuCard"
-import salmon from "../../img/salmon.png"
-import ribs from "../../img/ribs.jpg"
-import quesadilla from "../../img/quesadilla.png"
 
 export default function Menu(){
     return(
         <>
-            <div className={styles.menu}>
+        <div id="Menu">
             <p>Menu</p>
-                <div>   
-                    <h1>Dnešní menu</h1>
-                    <div className={styles.menuBox}>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        <MenuCard foodImage={quesadilla} foodTitle="Quesadilla" foodDescription="Grilovaná mexická tortilla plněná kuřecím prsíčkem, karamelizovanou cibulkou, jalapeño papričkami, opečenou slaninkou a čedarem + dip - zakysaná smetana, BBQ, nachos"/>
-                        <MenuCard foodImage={ribs} foodTitle="Pečená vepřová žebírka" foodDescription="600g nakládaná žebírka v naší BBQ marinádě, s domácími hranolky a salát coleslaw"/>
+            <div className={styles.box}>
+                <div className={styles.Menu}>
+                    <div className={styles.MenuCard}>
+                        <img src={burgers} alt="" srcset="" />
+                        <p>Stálé menu</p>
+                        <Link to={"/Food"}><button>Zobrazit více</button></Link>
                     </div>
-                    <button className={styles.buttonMore}>Zobrazit více</button>
-                </div>
-                <div>
-                <h1>Stálé menu</h1>
-                    <div className={styles.menuBox}>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        </div>
-                    <button className={styles.buttonMore}>Zobrazit více</button>
-                </div>
-                <div>
-                <h1>Nápoje</h1>
-                    <div className={styles.menuBox}>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        <MenuCard foodImage={salmon} foodTitle="Salmon 74" foodDescription="150g filet z lososa připravený na grilu s bylinkovým máslem"/>
-                        </div>
-                        <button className={styles.buttonMore}>Zobrazit více</button>
+                    <div className={styles.MenuCard}>
+                        <img src={nevimcotojelol} alt="" srcset="" />
+                        <p>Denní menu</p>
+                        <a href="https://www.menicka.cz/7509-america-pod-vezi.html"><button>Zobrazit více</button></a>                    
+                    </div>
+                    <div className={styles.MenuCard}>
+                        <img src={drinks} alt="" srcset="" />
+                        <p>Nápoje</p>
+                        <Link to={"/Drinks"}><button>Zobrazit více</button></Link>            
+                    </div>
                 </div>
                 <div className={styles.MenuLine}></div>
             </div>
+         </div>
         </>
     )
 }

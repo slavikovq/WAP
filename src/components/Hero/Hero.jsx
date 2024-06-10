@@ -9,7 +9,7 @@ export default function Hero(){
                     <div className={styles.heroText}>
                             <h3>Vítejte v Americe pod Věží</h3>
                             <h1>Navštivte nás</h1>
-                            <button>Dnešní nabídka</button>
+                            <a href="https://www.menicka.cz/7509-america-pod-vezi.html"><button>Dnešní nabídka</button></a>
                     </div>
                 </div>
             </div>
