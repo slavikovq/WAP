@@ -3,15 +3,103 @@
     padding: 60px;
 }
 
-.aboutUs p{
+.aboutUsContent p{
     font-size: 20px;
     color: rgba(255, 255, 255, 0.466);
 }
 
 .aboutUsInfo{
+    display: flex;
+    gap: 100px;
+    text-align: justify;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.aboutUsInfo p{
+    color: white;
+    line-height: 30px;
+    width: 500px;
+}
+
+.CredsBoxes{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.InfoBox{
+    display: flex;
+}
+
+.Box{
+    max-width: 200px;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 30px;
+    transition: transform 0.5s ease;  
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.767); 
 
 }
 
-.aboutUsCreds{
-    
+.Box p{
+    color: rgb(0, 0, 0);
+    font-size: 19px;
+    cursor:default;
+}
+.Box i{
+    color:  #e81c23;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.Box:hover{
+    transform: scale(1.1);
+}
+
+.title p{
+    color: white;
+    font-size: 20px;
+}
+
+.title{
+    text-align: center;
+    line-height: 60px;
+}
+
+.title button{
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #e81c22;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    border: 3px solid #e81c22;
+    transition: .5s ease;
+    margin: 10px;
+}
+
+.title button:hover{
+    background: none;
+    border: 3px solid #e81c22;
+    transition: .5s ease;
+    color: #e81c22;
+
+}
+
+.AboutUsLine{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    padding: 20px;
+}
+
+.AboutUsTitle{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.466);   
 }

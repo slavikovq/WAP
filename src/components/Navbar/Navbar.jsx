@@ -5,6 +5,19 @@ import { HashLink } from 'react-router-hash-link';
 
 
 export default function Navbar(){
+    let active = false
+
+    const openNav = () => {
+        const nav = document.getElementById("navResp")
+
+        if(!active){
+            active = true
+            nav.style.right = "0"
+        } else{
+            active = false
+            nav.style.right = "-100%"
+        }
+    }
     
     return(
         <>
@@ -26,6 +39,26 @@ export default function Navbar(){
                         <Link to={"https://www.instagram.com/americapodvezi/"} ><i class="fa-brands fa-instagram"></i></Link>
                         <Link to={"https://www.facebook.com/profile.php?id=100063543104526"}><i class="fa-brands fa-square-facebook"></i></Link>
                     </div>
+                </div>
+                <div className={styles.navContainerBtn}>
+                    <i class="fa-solid fa-bars" id={styles.navMenuBtn} onClick={openNav}></i>
+                </div>
+                <div className={styles.navbarResponsive} id="navResp">
+                    <div className={styles.navbarResponsiveClose}>
+                        <i class="fa-solid fa-xmark" onClick={openNav}></i>
+                    </div>
+                    <ul className={styles.navbarResponsiveNav}>
+                        <li>Domů</li>
+                        <li>Menu</li>
+                        <li>O nás</li>
+                        <li>Galerie</li>
+                        <li>Kontakt</li>
+                        <hr />
+                        <div className={styles.navbarResponsiveLinks}>
+                            <Link to={"https://www.instagram.com/americapodvezi/"} ><i class="fa-brands fa-instagram"></i></Link>
+                            <Link to={"https://www.facebook.com/profile.php?id=100063543104526"}><i class="fa-brands fa-square-facebook"></i></Link>
+                        </div>
+                    </ul>
                 </div>
             </nav>
         </>

@@ -10,8 +10,9 @@
 }
 
 .navLogo{
-    max-width: 280px;
+    max-width: 250px;
     width: 100%;
+    height: auto;
 }
 
 .navLinks{
@@ -70,19 +71,123 @@
     text-decoration: none;
 }
 .navBox1{
-    width: 33.33%;
+    width: 20%;
     display: flex;
     justify-content: left;
 }
 .navBox2{
-    width: 33.33%;
+    width: 60%;
     display: flex;
     justify-content: center;
 }
 .navBox3{
-    width: 33.33%;
+    width: 20%;
     display: flex;
     justify-content: right;
 }
-
+#navMenuBtn{
+    color: #fff;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.navContainerBtn{
+    display: none;
+    justify-content: right;
+}
+.navbarResponsive{
+    position: fixed;
+    background: radial-gradient(circle, rgba(59, 56, 56, 1) 0%, rgba(37, 37, 37, 1) 78%);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    max-width: 280px;
+    right: -100%;
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+    z-index: 10;
+}
+.navbarResponsiveClose{
+    position: absolute;
+    right: 1.5rem;
+    font-size: 27px;
+    color: #fff;
+    cursor: pointer;
+}
+.navbarResponsiveNav{
+    position: absolute;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0;
+    list-style: none;
+    margin-left: 5rem;
+}
+.navbarResponsiveNavC{
+    justify-content: center;
+    display: grid;
+    width: 100%;
+}
+.navbarResponsiveNav li{
+    margin-top: 1rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    position: relative;
+}
+.navbarResponsiveNav li::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: 5;
+    width: 0%;
+    height: 3px;
+    background-color: var(--red);
+    transition: .2s ease;
+}
+.navbarResponsiveNav li:hover::before{
+    width: 75%;
+    transition: .2s ease;
+}
+.navbarResponsiveLinks{
+    margin-top: 15px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+.navbarResponsiveLinks a{
+    font-size: 1.8rem;
+    color: #fff;
+    transition: .2s ease;
+}
+.navbarResponsiveLinks a:hover{
+    font-size: 1.8rem;
+    color: var(--red);
+    transition: .2s ease;
+}
+hr{
+    display: block;
+    background: rgba(255, 255, 255, 0.09);
+    width: 100%;
+    height: 1px;
+    margin: 1.5rem 0;
+    border: none;
+    opacity: 1;
+}
 /*Mnau*/
+@media screen and (max-width: 845px) {
+    .navBox2{
+        display: none;
+    }
+    .navBox3{
+        display: none;
+    }
+    .navBox1{
+        width: 50%;
+    }
+    .navContainerBtn{
+        margin-right: 10px;
+        width: 50%;
+        display: grid;
+    }
+}
