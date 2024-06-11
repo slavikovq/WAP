@@ -18,6 +18,11 @@ export default function Footer() {
             <p>
               <i class="fa-brands fa-internet-explorer"></i>{" "}
               www.americapodvezi.com
+            </p>  
+            <p>
+            <i class="fa-solid fa-house"></i>{" "}
+            Komenského náměstí 61
+            29301 Mladá Boleslav
             </p>
           </div>
           <div className={styles.map}>

@@ -174,7 +174,8 @@ hr{
     border: none;
     opacity: 1;
 }
-/*Mnau*/
+
+
 @media screen and (max-width: 845px) {
     .navBox2{
         display: none;
