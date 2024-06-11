@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 20px;
     transition: transform 0.5s ease;
     text-align: center;
@@ -69,4 +69,10 @@
 .MenuLine{
     border-bottom: 1px solid rgba(255, 255, 255, 0.37);
     padding: 20px;
+}
+
+.MenuTitle{
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.466);   
+        padding-left: 60px;
 }

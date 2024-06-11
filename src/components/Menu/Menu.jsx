@@ -8,7 +8,9 @@ export default function Menu(){
     return(
         <>
         <div id="Menu">
+        <div className={styles.MenuTitle}>
             <p>Menu</p>
+            </div>
             <div className={styles.box}>
                 <div className={styles.Menu}>
                     <div className={styles.MenuCard}>

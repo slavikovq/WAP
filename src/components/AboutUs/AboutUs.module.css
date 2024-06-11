@@ -8,57 +8,10 @@
     color: rgba(255, 255, 255, 0.466);
 }
 
-.aboutUsTime h1{
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    padding-top: 30px;
-    letter-spacing: 5px;
-}
-.aboutUsTime{
-    background: #4b4b4b;
-    border-radius: 8px;
-    padding: 25px;
-
-}
-.aboutUsTime p{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding-top: 30px;
-    text-align: center;
-    word-spacing: 10px;
-}
-
-.aboutUsMap{
-    text-align: center;
-    padding-top: 10px;
-}
-
 .aboutUsInfo{
-    text-align: left;
-    padding: 60px;
-    width: 50%;
+
 }
 
-.aboutUsInfo p{
-    color: white;
-    line-height: 2rem;
-    padding-bottom: 20px;
-}
-
-.aboutUsBox{
-    display: flex;
-    justify-content: center;
-    gap: 500px;
-    width: 50%;
-}
-
-.AboutUsLine{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
-}
-
-.aboutUsContent{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+.aboutUsCreds{
+    
 }
