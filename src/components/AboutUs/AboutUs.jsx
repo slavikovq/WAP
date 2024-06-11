@@ -1,4 +1,5 @@
 import styles from "./AboutUs.module.css";
+import { Link } from "react-router-dom";
 
 export default function AboutUs() {
   return (
@@ -49,7 +50,7 @@ export default function AboutUs() {
               Těšíme se na Vaši návštěvu a doufáme, že se Vám trefíme do chutí.
             </p>
             <p>Děkujeme – Vaše America „Pod Věží"</p>
-            <button><p>otevírací doba</p></button>
+            <Link to="/Open"><button><p>otevírací doba</p></button></Link>
           </div>
           </div>
                   <div className={styles.AboutUsLine}></div>
