@@ -7,8 +7,9 @@ import Footer from "../../components/Footer/Footer"
 export default function Home() {
     return(
         <>
-            <Navbar/>
-            <Hero/>
+            <Hero>
+                <Navbar/>
+            </Hero>
             <AboutUs/>
             <Menu/>
             <Footer/>

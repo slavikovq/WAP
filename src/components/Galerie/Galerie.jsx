@@ -45,7 +45,6 @@ export default function Galerie(){
                         <a href={interier2} target="_blank"><img src={interier2} alt="" /></a>
                         <a href={interier3} target="_blank"><img src={interier3} alt="" /></a>
                         <a href={interier4} target="_blank"><img src={interier4} alt="" /></a>
-                        <a href={interier5} target="_blank"><img src={interier5} alt="" /></a>
                     </div>
 
                     <div className={styles.imagesBox}>
@@ -53,7 +52,6 @@ export default function Galerie(){
                         <a href={interier7} target="_blank"><img src={interier7} alt="" /></a>
                         <a href={interier8} target="_blank"><img src={interier8} alt="" /></a>
                         <a href={interier9} target="_blank"><img src={interier9} alt="" /></a>
-                        <a href={interier10} target="_blank"><img src={interier10} alt="" /></a>
                     </div>
                 </div> 
                 
@@ -72,7 +70,6 @@ export default function Galerie(){
                         <a href={jidlo7} target="_blank"><img src={jidlo7} alt="" /></a>
                         <a href={jidlo8} target="_blank"><img src={jidlo8} alt="" /></a>
                         <a href={jidlo9} target="_blank"><img src={jidlo9} alt="" /></a>
-                        <a href={jidlo10} target="_blank"><img src={jidlo10} alt="" /></a>
                     </div>
                 </div> 
                 <div className={styles.InterierBox}>
@@ -82,7 +79,6 @@ export default function Galerie(){
                         <a href={akce2} target="_blank"><img src={akce2} alt="" /></a>
                         <a href={akce3} target="_blank"><img src={akce3} alt="" /></a>
                         <a href={akce4} target="_blank"><img src={akce4} alt="" /></a>
-                        <a href={akce5} target="_blank"><img src={akce5} alt="" /></a>
                     </div>
 
                     <div className={styles.imagesBox}>
@@ -90,7 +86,6 @@ export default function Galerie(){
                         <a href={akce7} target="_blank"><img src={akce7} alt="" /></a>
                         <a href={akce8} target="_blank"><img src={akce8} alt="" /></a>
                         <a href={akce9} target="_blank"><img src={akce9} alt="" /></a>
-                        <a href={akce10} target="_blank"><img src={akce10} alt="" /></a>
                     </div>
                 </div> 
             </div>

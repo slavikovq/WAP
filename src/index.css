@@ -10,5 +10,16 @@
 }
 
 body{
-    background: radial-gradient(circle, rgba(59,56,56,1) 0%, rgba(37,37,37,1) 78%);
+    background-color: #272626;
 }
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #e81c22;
+  }

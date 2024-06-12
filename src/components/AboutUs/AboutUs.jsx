@@ -26,7 +26,6 @@ export default function AboutUs() {
                 a dobré náladě.
               </p>
             </div>
-            <div className={styles.aboutUsCreds}></div>
             <div className={styles.CredsBoxes}>
               <div className={styles.Box}>
                 <i class="fa-solid fa-chair"></i>
@@ -45,15 +44,11 @@ export default function AboutUs() {
                 <p>Kvalita, kvantita, prostě domácí je domácí</p>
               </div>
             </div>
-            <div className={styles.title}>
-            <p>
-              Těšíme se na Vaši návštěvu a doufáme, že se Vám trefíme do chutí.
-            </p>
-            <p>Děkujeme – Vaše America „Pod Věží"</p>
-            <Link to="/Open"><button><p>otevírací doba</p></button></Link>
+            <p className={styles.text}><b>Těšíme se na Vaši návštěvu a doufáme, že se Vám trefíme do chutí.</b> - <i>Vaše America „Pod Věží"</i></p>
+              <div className={styles.title}>
+                <Link to={"/oteviraci-doba"}><button>Otevírací doba</button></Link>
+              </div>
           </div>
-          </div>
-                  <div className={styles.AboutUsLine}></div>
         </div>
 
       </section>

@@ -48,3 +48,31 @@
     border: 3px solid #e81c22;
     transition: .5s ease;
 }
+.buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+@media screen and (max-width: 720px) {
+    .heroText h3{
+        font-size: 15px;
+    }
+    .heroText h1{
+        font-size: 40px;
+    }
+    .hero{
+        height: 70vh;
+    }
+    .heroText button{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .heroContent{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 321px) {
+    .heroText h1{
+        font-size: 35px;
+    }
+} 

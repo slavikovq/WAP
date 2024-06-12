@@ -6,8 +6,9 @@
 .Menu{
     display: flex;
     justify-content: center;
-    gap: 200px;
-    padding: 60px;
+    gap: 50px;
+    padding: 60px 0;
+    flex-flow: wrap;
 }
 
 .MenuCard{
@@ -20,6 +21,7 @@
     transition: transform 0.5s ease;
     text-align: center;
     padding: 20px;
+    width: 300px;
 }
 
 .MenuCard p{
@@ -33,7 +35,7 @@
 
 .MenuCard:hover{
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.767); 
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .MenuCard button{
@@ -47,14 +49,14 @@
     color: white;
     cursor: pointer;
     border: 3px solid #e81c22;
-    transition: .5s ease;
+    transition: .3s ease;
     margin: 10px;
 }
 
 .MenuCard button:hover{
     background: none;
     border: 3px solid #e81c22;
-    transition: .5s ease;
+    transition: .3s ease;
     color: #e81c22;
 
 }
@@ -66,13 +68,9 @@
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.767); 
 }
 
-.MenuLine{
-    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
-    padding: 20px;
-}
-
 .MenuTitle{
-        font-size: 20px;
-        color: rgba(255, 255, 255, 0.466);   
-        padding-left: 60px;
+    font-size: 45px;
+    text-align: center;
+    color: #fff;   
+    font-weight: bold;
 }

@@ -3,7 +3,8 @@
 }
 
 .nav{
-    background: radial-gradient(circle, rgba(59,56,56,1) 0%, rgba(37,37,37,1) 78%);
+    background: none;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.767); 
     display: flex;
     padding: 10px 3%;
     align-items: center;
@@ -96,7 +97,7 @@
 }
 .navbarResponsive{
     position: fixed;
-    background: radial-gradient(circle, rgba(59, 56, 56, 1) 0%, rgba(37, 37, 37, 1) 78%);
+    background: #272626;
     width: 100%;
     height: 100%;
     top: 0;
@@ -132,6 +133,9 @@
     text-align: center;
     font-size: 1.3rem;
     position: relative;
+}
+.navbarResponsiveNav a{
+    text-decoration: none;
 }
 .navbarResponsiveNav li::before{
     content: "";
@@ -174,8 +178,7 @@ hr{
     border: none;
     opacity: 1;
 }
-
-
+/*Mnau*/
 @media screen and (max-width: 845px) {
     .navBox2{
         display: none;

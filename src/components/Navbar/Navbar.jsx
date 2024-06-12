@@ -48,11 +48,11 @@ export default function Navbar(){
                         <i class="fa-solid fa-xmark" onClick={openNav}></i>
                     </div>
                     <ul className={styles.navbarResponsiveNav}>
-                        <li>Domů</li>
-                        <li>Menu</li>
-                        <li>O nás</li>
-                        <li>Galerie</li>
-                        <li>Kontakt</li>
+                        <Link to={"/"}><li>Domů</li></Link>
+                        <HashLink to='/#AboutUs'><li>Menu</li></HashLink>
+                        <HashLink to='/#Menu'><li>O nás</li></HashLink>
+                        <Link to={"/Galerie"}><li>Galerie</li></Link>
+                        <HashLink to='/#Kontakt'><li>Kontakt</li></HashLink>
                         <hr />
                         <div className={styles.navbarResponsiveLinks}>
                             <Link to={"https://www.instagram.com/americapodvezi/"} ><i class="fa-brands fa-instagram"></i></Link>

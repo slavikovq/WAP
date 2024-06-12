@@ -3,7 +3,7 @@ import Home from "./Home/Home"
 import GaleriePage from "./Galerie/Galerie"
 import Food from "./Food/Food"
 import Drinks from "./Drinks/Drinks"
-import Open from "./Open/Open"
+import OteviraciDoba from "./OteviraciDoba/OteviraciDoba"
 
 export default function AppRoutes() {
     return(
@@ -14,7 +14,7 @@ export default function AppRoutes() {
                     <Route path="/Galerie" element={<GaleriePage/>}/>
                     <Route path="/Food" element={<Food/>}/>
                     <Route path="/Drinks" element={<Drinks/>}/>
-                    <Route path="/Open" element={<Open/>}/>
+                    <Route path="/oteviraci-doba" element={<OteviraciDoba/>}/>
                 </Routes>
             </BrowserRouter>
         </>
